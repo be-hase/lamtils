@@ -13,7 +13,7 @@ public interface KeyValueFunction<T> extends Serializable, Function<String, T> {
         try {
             Method replaceMethod = getClass().getDeclaredMethod("writeReplace");
             replaceMethod.setAccessible(true);
-            return (SerializedLambda)replaceMethod.invoke(this);
+            return (SerializedLambda) replaceMethod.invoke(this);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -46,10 +46,10 @@ public interface KeyValueFunction<T> extends Serializable, Function<String, T> {
     }
 
     default void checkParametersEnabled() {
-        if (Objects.equals("arg0", parameter(0).getName())) {
+        if ("arg0".equals(parameter(0).getName())) {
             throw new IllegalStateException(
-                    "You need to compile with javac -parameters for parameter reflection to work; You also need java " +
-                            "8u60 or newer to use it with lambdas");
+                    "You need to compile with javac -parameters for parameter reflection to work." +
+                            "And you also need jdk 8u60 or newer to use it with lambdas");
         }
     }
 
