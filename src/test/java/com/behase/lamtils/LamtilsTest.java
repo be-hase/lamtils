@@ -31,7 +31,7 @@ public class LamtilsTest {
     }
 
     @Test
-    public void newHashMap() {
+    public void test_newHashMap() {
         Map<String, Object> result;
         Date now = new Date();
 
@@ -49,7 +49,7 @@ public class LamtilsTest {
     }
 
     @Test
-    public void newLinkedHashMap() {
+    public void test_newLinkedHashMap() {
         Map<String, Object> result;
         Date now = new Date();
 
@@ -67,7 +67,7 @@ public class LamtilsTest {
     }
 
     @Test
-    public void newTreeMap() {
+    public void test_newTreeMap() {
         Map<String, Object> result;
         Date now = new Date();
 
@@ -85,7 +85,7 @@ public class LamtilsTest {
     }
 
     @Test
-    public void newConcurrentMap() {
+    public void test_newConcurrentMap() {
         Map<String, Object> result;
         Date now = new Date();
 
@@ -103,7 +103,7 @@ public class LamtilsTest {
     }
 
     @Test
-    public void newClass() {
+    public void test_newClass() {
         TestPojo result;
         Date now = new Date();
 
@@ -131,51 +131,51 @@ public class LamtilsTest {
         assertThat(result.getTwo(), is(0));
     }
 
-    public static class TestPojo {
-        private String one;
-        private int two;
-        private Date three;
-        private double four;
-        private boolean five;
+public static class TestPojo {
+    private String one;
+    private int two;
+    private Date three;
+    private double four;
+    private boolean five;
 
-        public String getOne() {
-            return one;
-        }
-
-        public void setOne(String one) {
-            this.one = one;
-        }
-
-        public int getTwo() {
-            return two;
-        }
-
-        public void setTwo(int two) {
-            this.two = two;
-        }
-
-        public Date getThree() {
-            return three;
-        }
-
-        public void setThree(Date three) {
-            this.three = three;
-        }
-
-        public double getFour() {
-            return four;
-        }
-
-        public void setFour(double four) {
-            this.four = four;
-        }
-
-        public boolean isFive() {
-            return five;
-        }
-
-        public void setFive(boolean five) {
-            this.five = five;
-        }
+    public String getOne() {
+        return one;
     }
+
+    public void setOne(String one) {
+        this.one = one;
+    }
+
+    public int getTwo() {
+        return two;
+    }
+
+    public void setTwo(int two) {
+        this.two = two;
+    }
+
+    public Date getThree() {
+        return three;
+    }
+
+    public void setThree(Date three) {
+        this.three = three;
+    }
+
+    public double getFour() {
+        return four;
+    }
+
+    public void setFour(double four) {
+        this.four = four;
+    }
+
+    public boolean isFive() {
+        return five;
+    }
+
+    public void setFive(boolean five) {
+        this.five = five;
+    }
+}
 }
