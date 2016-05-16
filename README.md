@@ -4,7 +4,7 @@
 
 ## Lamtils ? 
 
-lamtils (LAMbda uTILS) is expression utility library for Creating map and POJO(Java bean).
+Lamtils(LAMbda uTILS) is (lambda's)expression utility library for Creating map and POJO(Java bean).
 
 Look this sample !
 
