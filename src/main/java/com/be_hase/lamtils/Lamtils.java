@@ -1,6 +1,7 @@
-package com.behase.lamtils;
+package com.be_hase.lamtils;
 
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -39,7 +40,7 @@ public class Lamtils {
             Arrays.stream(keyValuePairs)
                     .forEach(kvp -> {
                         try {
-                            BeanUtils.setProperty(obj, kvp.key(), kvp.value());
+                            PropertyUtils.setProperty(obj, kvp.key(), kvp.value());
                         } catch (Exception e) {
                             throw new RuntimeException(e);
                         }

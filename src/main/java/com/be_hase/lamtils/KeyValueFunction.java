@@ -1,4 +1,4 @@
-package com.behase.lamtils;
+package com.be_hase.lamtils;
 
 import java.io.Serializable;
 import java.lang.invoke.SerializedLambda;

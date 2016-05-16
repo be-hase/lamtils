@@ -1,4 +1,4 @@
-group 'com.behase'
+group 'com.behase.lamtils'
 version '0.0.1-SNAPSHOT'
 
 apply plugin: 'java'

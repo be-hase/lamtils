@@ -1,7 +1,10 @@
-package com.behase.lamtils;
+package com.be_hase.lamtils;
 
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -130,6 +133,15 @@ public class LamtilsTest {
         assertThat(result.getOne(), is("one"));
         assertThat(result.getTwo(), is(0));
     }
+
+    @Test(expected = RuntimeException.class)
+    public void test_newClass_invalid_property() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        TestPojo result = Lamtils.newClass(
+                TestPojo.class,
+                hoge -> "hoge"
+        );
+    }
+
 
 public static class TestPojo {
     private String one;
