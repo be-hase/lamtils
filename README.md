@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/be-hase/lamtils.svg?branch=master)](https://travis-ci.org/be-hase/lamtils)
+[![CircleCI](https://circleci.com/gh/be-hase/lamtils.svg?style=svg)](https://circleci.com/gh/be-hase/lamtils)
 
 # lamtils
 
