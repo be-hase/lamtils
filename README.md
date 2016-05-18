@@ -73,5 +73,4 @@ I think that it is better for using only test code.
 
 ## Requirements
 
-* JDK 8u60
 * Need "-parameters" option on javac
