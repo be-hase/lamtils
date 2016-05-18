@@ -1,5 +1,5 @@
-group 'com.behase.lamtils'
-version '0.0.1-SNAPSHOT'
+group 'com.be-hase.lamtils'
+version '0.0.1'
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -65,7 +65,7 @@ uploadArchives {
                 }
 
                 pom.project {
-                    name 'com.be_hase.lamtils'
+                    name 'lamtils'
                     packaging 'jar'
                     description 'Lamtils'
                     url 'https://github.com/be-hase/lamtils'
