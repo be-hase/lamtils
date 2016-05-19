@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/be-hase/lamtils.svg?style=svg)](https://circleci.com/gh/be-hase/lamtils)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.be-hase.lamtils/lamtils/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.be-hase.lamtils/lamtils)
 
 # Lamtils
 
